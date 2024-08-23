@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonContent,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
@@ -24,12 +25,12 @@ import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
 
 /* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
+// import '@ionic/react/css/padding.css';
+// import '@ionic/react/css/float-elements.css';
+// import '@ionic/react/css/text-alignment.css';
+// import '@ionic/react/css/text-transformation.css';
+// import '@ionic/react/css/flex-utils.css';
+// import '@ionic/react/css/display.css';
 
 /**
  * Ionic Dark Mode
@@ -43,12 +44,44 @@ import '@ionic/react/css/display.css';
 import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
-import './theme/variables.css';
+// import './theme/variables.css';
+/* Tailwind styles */
+
+// import './tailwind.css';
+
+import Login from "./pages/LoginPage"
+import Home from './pages/Home/index'
+import Cart from './pages/Cart'
+import Menu from './pages/Menu'
+import Slider from './pages/Slider';
+import UIProvider from './MyContext';
+import { useContext } from 'react';
+import UIContext from './MyContext'
+import TabNavigation from './components/TabNavigation';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
+const App: React.FC = () => {
+
+
+  
+  return(
+
+
+
+<IonApp>
+
+<Slider/>
+ {/* <TabNavigation/> */}
+</IonApp>
+
+
+)};
+
+export default App;
+
+
+{/* <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
@@ -81,7 +114,4 @@ const App: React.FC = () => (
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
-  </IonApp>
-);
-
-export default App;
+  </IonApp> */}
