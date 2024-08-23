@@ -1,5 +1,5 @@
 
-<!-- // run on android mobile -->
+// run on android mobile
 
 // ionic build
 // ionic cap add android
