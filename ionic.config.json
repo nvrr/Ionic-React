@@ -1,0 +1,7 @@
+{
+  "name": "myion",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
