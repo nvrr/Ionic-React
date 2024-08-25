@@ -1,20 +1,9 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
-  IonContent,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
   setupIonicReact
 } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -49,33 +38,17 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 // import './tailwind.css';
 
-import Login from "./pages/LoginPage"
-import Home from './pages/Home/index'
-import Cart from './pages/Cart'
-import Menu from './pages/Menu'
+
 import Slider from './pages/Slider';
-import UIProvider from './MyContext';
-import { useContext } from 'react';
-import UIContext from './MyContext'
-import TabNavigation from './components/TabNavigation';
 
 setupIonicReact();
 
 const App: React.FC = () => {
-
-
-  
+ 
   return(
-
-
-
 <IonApp>
-
 <Slider/>
- {/* <TabNavigation/> */}
 </IonApp>
-
-
 )};
 
 export default App;

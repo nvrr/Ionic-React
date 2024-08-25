@@ -15,7 +15,7 @@ useEffect(() => {
 
  
     return (
-      <IonApp>
+     
       <IonSplitPane contentId="main">
   <IonMenu type='overlay' contentId="main-content">
         <IonHeader>
@@ -32,14 +32,14 @@ useEffect(() => {
         </IonContent>
       </IonPage> */}
 <IonPage id="main-content">
-<IonHeader style={tabStyle}>
+{/* <IonHeader style={tabStyle}>
     <IonToolbar>
     <IonButtons slot="start">
               <IonMenuButton></IonMenuButton>
             </IonButtons>
             <IonTitle>You</IonTitle>
           </IonToolbar>
-          </IonHeader>
+          </IonHeader> */}
         
         <IonContent className="ion-padding">
        <TabNavigation/>
@@ -47,7 +47,7 @@ useEffect(() => {
       </IonPage> 
 
       </IonSplitPane>
-      </IonApp>
+  
   )}
   
   export default Slider;
